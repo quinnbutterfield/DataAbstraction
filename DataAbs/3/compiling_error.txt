@@ -1,0 +1,118 @@
+In file included from /users/qbutterf/DataAbs/3/TestCode.cpp:4:0:
+/users/qbutterf/DataAbs/3/LinkedList.h: In constructor ‘LinkedList<T>::iterator::iterator()’:
+/users/qbutterf/DataAbs/3/LinkedList.h:20:21: error: ‘nullptr’ was not declared in this scope
+                 x = nullptr;
+                     ^
+/users/qbutterf/DataAbs/3/LinkedList.h: In member function ‘LinkedList<T>::iterator LinkedList<T>::iterator::operator++(int)’:
+/users/qbutterf/DataAbs/3/LinkedList.h:50:28: error: ‘tmp’ does not name a type
+                       auto tmp = x;
+                            ^
+/users/qbutterf/DataAbs/3/LinkedList.h:52:39: error: ‘tmp’ was not declared in this scope
+                       return iterator(tmp);
+                                       ^
+/users/qbutterf/DataAbs/3/LinkedList.h: In member function ‘LinkedList<T>::iterator LinkedList<T>::iterator::operator--(int)’:
+/users/qbutterf/DataAbs/3/LinkedList.h:55:28: error: ‘tmp’ does not name a type
+                       auto tmp = x;
+                            ^
+/users/qbutterf/DataAbs/3/LinkedList.h:57:39: error: ‘tmp’ was not declared in this scope
+                       return iterator(tmp);
+                                       ^
+/users/qbutterf/DataAbs/3/LinkedList.h: In constructor ‘LinkedList<T>::const_iterator::const_iterator()’:
+/users/qbutterf/DataAbs/3/LinkedList.h:68:21: error: ‘nullptr’ was not declared in this scope
+                 x = nullptr;
+                     ^
+/users/qbutterf/DataAbs/3/LinkedList.h: In member function ‘LinkedList<T>::const_iterator LinkedList<T>::const_iterator::operator++(int)’:
+/users/qbutterf/DataAbs/3/LinkedList.h:98:28: error: ‘tmp’ does not name a type
+                       auto tmp = x;
+                            ^
+/users/qbutterf/DataAbs/3/LinkedList.h:100:45: error: ‘tmp’ was not declared in this scope
+                       return const_iterator(tmp);
+                                             ^
+/users/qbutterf/DataAbs/3/LinkedList.h: In member function ‘LinkedList<T>::const_iterator LinkedList<T>::const_iterator::operator--(int)’:
+/users/qbutterf/DataAbs/3/LinkedList.h:103:28: error: ‘tmp’ does not name a type
+                       auto tmp = x;
+                            ^
+/users/qbutterf/DataAbs/3/LinkedList.h:105:45: error: ‘tmp’ was not declared in this scope
+                       return const_iterator(tmp);
+                                             ^
+/users/qbutterf/DataAbs/3/LinkedList.h: In copy constructor ‘LinkedList<T>::LinkedList(const LinkedList<T>&)’:
+/users/qbutterf/DataAbs/3/LinkedList.h:123:13: error: ‘x’ does not name a type
+   for (auto x : other){
+             ^
+/users/qbutterf/DataAbs/3/LinkedList.h:126:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+/users/qbutterf/DataAbs/3/LinkedList.h:126:1: error: expected primary-expression before ‘}’ token
+/users/qbutterf/DataAbs/3/LinkedList.h:126:1: error: expected ‘;’ before ‘}’ token
+/users/qbutterf/DataAbs/3/LinkedList.h:126:1: error: expected primary-expression before ‘}’ token
+/users/qbutterf/DataAbs/3/LinkedList.h:126:1: error: expected ‘)’ before ‘}’ token
+/users/qbutterf/DataAbs/3/LinkedList.h:126:1: error: expected primary-expression before ‘}’ token
+/users/qbutterf/DataAbs/3/LinkedList.h:126:1: error: expected ‘;’ before ‘}’ token
+/users/qbutterf/DataAbs/3/LinkedList.h: In member function ‘LinkedList<T>& LinkedList<T>::operator=(const LinkedList<T>&)’:
+/users/qbutterf/DataAbs/3/LinkedList.h:129:11: error: ‘x’ does not name a type
+  for(auto x : al){
+           ^
+/users/qbutterf/DataAbs/3/LinkedList.h:132:2: error: expected ‘;’ before ‘return’
+  return *this;
+  ^
+/users/qbutterf/DataAbs/3/LinkedList.h:132:2: error: expected primary-expression before ‘return’
+/users/qbutterf/DataAbs/3/LinkedList.h:132:2: error: expected ‘;’ before ‘return’
+/users/qbutterf/DataAbs/3/LinkedList.h:132:2: error: expected primary-expression before ‘return’
+/users/qbutterf/DataAbs/3/LinkedList.h:132:2: error: expected ‘)’ before ‘return’
+/users/qbutterf/DataAbs/3/LinkedList.h: In member function ‘T& LinkedList<T>::operator[](int)’:
+/users/qbutterf/DataAbs/3/LinkedList.h:153:8: error: ‘iter’ does not name a type
+   auto iter = begin();
+        ^
+/users/qbutterf/DataAbs/3/LinkedList.h:155:5: error: ‘iter’ was not declared in this scope
+     iter++;
+     ^
+/users/qbutterf/DataAbs/3/LinkedList.h:157:11: error: ‘iter’ was not declared in this scope
+   return *iter;
+           ^
+/users/qbutterf/DataAbs/3/LinkedList.h: In member function ‘const T& LinkedList<T>::operator[](int) const’:
+/users/qbutterf/DataAbs/3/LinkedList.h:160:8: error: ‘iter’ does not name a type
+   auto iter = begin();
+        ^
+/users/qbutterf/DataAbs/3/LinkedList.h:162:5: error: ‘iter’ was not declared in this scope
+     iter++;
+     ^
+/users/qbutterf/DataAbs/3/LinkedList.h:164:11: error: ‘iter’ was not declared in this scope
+   return *iter;
+           ^
+/users/qbutterf/DataAbs/3/LinkedList.h: In member function ‘LinkedList<T>::iterator LinkedList<T>::insert(LinkedList<T>::iterator, const T&)’:
+/users/qbutterf/DataAbs/3/LinkedList.h:168:10: error: ‘ptr’ does not name a type
+     auto ptr = position.x;
+          ^
+/users/qbutterf/DataAbs/3/LinkedList.h:169:10: error: ‘newNode’ does not name a type
+     auto newNode = new Node{t, ptr->prev,ptr};
+          ^
+/users/qbutterf/DataAbs/3/LinkedList.h:170:5: error: ‘ptr’ was not declared in this scope
+     ptr->prev->next = newNode;
+     ^
+/users/qbutterf/DataAbs/3/LinkedList.h:170:23: error: ‘newNode’ was not declared in this scope
+     ptr->prev->next = newNode;
+                       ^
+/users/qbutterf/DataAbs/3/LinkedList.h: In member function ‘LinkedList<T>::iterator LinkedList<T>::erase(LinkedList<T>::iterator)’:
+/users/qbutterf/DataAbs/3/LinkedList.h:176:10: error: ‘ptr’ does not name a type
+     auto ptr = position.x;
+          ^
+/users/qbutterf/DataAbs/3/LinkedList.h:177:5: error: ‘ptr’ was not declared in this scope
+     ptr->prev->next = ptr-> next;
+     ^
+/users/qbutterf/DataAbs/3/LinkedList.h:179:10: error: ‘tmp’ does not name a type
+     auto tmp = ptr->next;
+          ^
+/users/qbutterf/DataAbs/3/LinkedList.h:182:21: error: ‘tmp’ was not declared in this scope
+     return iterator(tmp);
+                     ^
+/users/qbutterf/DataAbs/3/TestCode.cpp: In function ‘int main()’:
+/users/qbutterf/DataAbs/3/TestCode.cpp:42:12: error: ‘i’ does not name a type
+   for(auto i:d) sum +=i;
+            ^
+/users/qbutterf/DataAbs/3/TestCode.cpp:43:3: error: expected ‘;’ before ‘if’
+   if(sum != 1249975000){
+   ^
+/users/qbutterf/DataAbs/3/TestCode.cpp:43:3: error: expected primary-expression before ‘if’
+/users/qbutterf/DataAbs/3/TestCode.cpp:43:3: error: expected ‘;’ before ‘if’
+/users/qbutterf/DataAbs/3/TestCode.cpp:43:3: error: expected primary-expression before ‘if’
+/users/qbutterf/DataAbs/3/TestCode.cpp:43:3: error: expected ‘)’ before ‘if’

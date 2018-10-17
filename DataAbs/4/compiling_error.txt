@@ -1,0 +1,166 @@
+In file included from /users/qbutterf/DataAbs/4/Test.cpp:8:0:
+/users/qbutterf/DataAbs/4/FileArrayList.h:7:55: warning: defaulted and deleted functions only available with -std=c++11 or -std=gnu++11 [enabled by default]
+         FileArrayList(const FileArrayList<T> &that) = delete;
+                                                       ^
+/users/qbutterf/DataAbs/4/FileArrayList.h:8:68: warning: defaulted and deleted functions only available with -std=c++11 or -std=gnu++11 [enabled by default]
+         FileArrayList<T> operator=(const FileArrayList<T> &that) = delete;
+                                                                    ^
+/users/qbutterf/DataAbs/4/FileArrayList.h: In member function ‘FileArrayList<T>::const_iterator FileArrayList<T>::const_iterator::operator++(int)’:
+/users/qbutterf/DataAbs/4/FileArrayList.h:76:26: error: ‘tmp’ does not name a type
+                     auto tmp = *this;
+                          ^
+/users/qbutterf/DataAbs/4/FileArrayList.h:78:28: error: ‘tmp’ was not declared in this scope
+                     return tmp;
+                            ^
+/users/qbutterf/DataAbs/4/FileArrayList.h: In member function ‘FileArrayList<T>::const_iterator FileArrayList<T>::const_iterator::operator--(int)’:
+/users/qbutterf/DataAbs/4/FileArrayList.h:81:26: error: ‘tmp’ does not name a type
+                     auto tmp = *this;
+                          ^
+/users/qbutterf/DataAbs/4/FileArrayList.h:83:28: error: ‘tmp’ was not declared in this scope
+                     return tmp;
+                            ^
+/users/qbutterf/DataAbs/4/FileArrayList.h: In constructor ‘FileArrayList<T>::FileArrayList(I, I, const string&)’:
+/users/qbutterf/DataAbs/4/FileArrayList.h:101:22: error: ‘i’ does not name a type
+             for(auto i = begin; i != end; i++){
+                      ^
+/users/qbutterf/DataAbs/4/FileArrayList.h:101:33: error: expected ‘;’ before ‘i’
+             for(auto i = begin; i != end; i++){
+                                 ^
+/users/qbutterf/DataAbs/4/FileArrayList.h:101:33: error: ‘i’ was not declared in this scope
+/users/qbutterf/DataAbs/4/FileArrayList.h: In member function ‘FileArrayList<T>::const_iterator FileArrayList<T>::insert(FileArrayList<T>::const_iterator, const T&)’:
+/users/qbutterf/DataAbs/4/FileArrayList.h:121:20: error: ‘i’ does not name a type
+           for(auto i = end(); i != position; --i){
+                    ^
+/users/qbutterf/DataAbs/4/FileArrayList.h:121:31: error: expected ‘;’ before ‘i’
+           for(auto i = end(); i != position; --i){
+                               ^
+/users/qbutterf/DataAbs/4/FileArrayList.h:121:31: error: ‘i’ was not declared in this scope
+/users/qbutterf/DataAbs/4/FileArrayList.h: In member function ‘FileArrayList<T>::const_iterator FileArrayList<T>::erase(FileArrayList<T>::const_iterator)’:
+/users/qbutterf/DataAbs/4/FileArrayList.h:134:20: error: ‘i’ does not name a type
+           for(auto i = position; i != end(); ++i){
+                    ^
+/users/qbutterf/DataAbs/4/FileArrayList.h:134:34: error: expected ‘;’ before ‘i’
+           for(auto i = position; i != end(); ++i){
+                                  ^
+/users/qbutterf/DataAbs/4/FileArrayList.h:134:34: error: ‘i’ was not declared in this scope
+/users/qbutterf/DataAbs/4/Test.cpp: In function ‘bool fillArray(const string&, std::vector<V>&)’:
+/users/qbutterf/DataAbs/4/Test.cpp:43:8: error: ‘iter’ does not name a type
+   auto iter = lst.begin();
+        ^
+/users/qbutterf/DataAbs/4/Test.cpp:44:12: error: range-based ‘for’ loops are not allowed in C++98 mode
+   for(V &v:data) {
+            ^
+/users/qbutterf/DataAbs/4/Test.cpp:45:9: error: ‘iter’ was not declared in this scope
+     if(*iter!=v) return false;
+         ^
+/users/qbutterf/DataAbs/4/Test.cpp:46:7: error: ‘iter’ was not declared in this scope
+     ++iter;
+       ^
+/users/qbutterf/DataAbs/4/Test.cpp: In function ‘bool checkEquality(const string&, std::vector<V>&)’:
+/users/qbutterf/DataAbs/4/Test.cpp:55:8: error: ‘iter’ does not name a type
+   auto iter = lst.begin();
+        ^
+/users/qbutterf/DataAbs/4/Test.cpp:56:12: error: range-based ‘for’ loops are not allowed in C++98 mode
+   for(V &v:data) {
+            ^
+/users/qbutterf/DataAbs/4/Test.cpp:57:9: error: ‘iter’ was not declared in this scope
+     if(*iter!=v) return false;
+         ^
+/users/qbutterf/DataAbs/4/Test.cpp:58:7: error: ‘iter’ was not declared in this scope
+     ++iter;
+       ^
+/users/qbutterf/DataAbs/4/Test.cpp: In function ‘bool simpleTest(T&, const string&)’:
+/users/qbutterf/DataAbs/4/Test.cpp:81:12: error: ‘iter’ does not name a type
+   for(auto iter = lst1.begin(); iter!=lst1.end(); ++iter) {
+            ^
+/users/qbutterf/DataAbs/4/Test.cpp:81:33: error: expected ‘;’ before ‘iter’
+   for(auto iter = lst1.begin(); iter!=lst1.end(); ++iter) {
+                                 ^
+/users/qbutterf/DataAbs/4/Test.cpp:81:33: error: ‘iter’ was not declared in this scope
+/users/qbutterf/DataAbs/4/Test.cpp:89:12: error: ‘iter’ does not name a type
+   for(auto iter = lst1.cbegin(); iter!=lst1.cend(); ++iter) {
+            ^
+/users/qbutterf/DataAbs/4/Test.cpp:89:34: error: expected ‘;’ before ‘iter’
+   for(auto iter = lst1.cbegin(); iter!=lst1.cend(); ++iter) {
+                                  ^
+/users/qbutterf/DataAbs/4/Test.cpp:89:34: error: ‘iter’ was not declared in this scope
+/users/qbutterf/DataAbs/4/Test.cpp:97:12: error: ‘iter’ does not name a type
+   for(auto iter = --lst1.end(); iter!=lst1.begin(); --iter) {
+            ^
+/users/qbutterf/DataAbs/4/Test.cpp:97:33: error: expected ‘;’ before ‘iter’
+   for(auto iter = --lst1.end(); iter!=lst1.begin(); --iter) {
+                                 ^
+/users/qbutterf/DataAbs/4/Test.cpp:97:33: error: ‘iter’ was not declared in this scope
+/users/qbutterf/DataAbs/4/Test.cpp: In function ‘int main(int, char**)’:
+/users/qbutterf/DataAbs/4/Test.cpp:174:12: error: ‘i’ does not name a type
+   for(auto i:al3) sum += i;
+            ^
+/users/qbutterf/DataAbs/4/Test.cpp:175:3: error: expected ‘;’ before ‘if’
+   if(sum!=ans1) {
+   ^
+/users/qbutterf/DataAbs/4/Test.cpp:175:3: error: expected primary-expression before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:175:3: error: expected ‘;’ before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:175:3: error: expected primary-expression before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:175:3: error: expected ‘)’ before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:180:12: error: ‘i’ does not name a type
+   for(auto i:ll3) sum += i;
+            ^
+/users/qbutterf/DataAbs/4/Test.cpp:181:3: error: expected ‘;’ before ‘if’
+   if(sum!=ans1) {
+   ^
+/users/qbutterf/DataAbs/4/Test.cpp:181:3: error: expected primary-expression before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:181:3: error: expected ‘;’ before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:181:3: error: expected primary-expression before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:181:3: error: expected ‘)’ before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:186:8: error: ‘iter2’ does not name a type
+   auto iter2 = ++ll3.begin();
+        ^
+/users/qbutterf/DataAbs/4/Test.cpp:187:8: error: ‘iter’ does not name a type
+   auto iter = ++al3.begin();
+        ^
+/users/qbutterf/DataAbs/4/Test.cpp:189:15: error: ‘iter’ was not declared in this scope
+     al3.erase(iter);
+               ^
+/users/qbutterf/DataAbs/4/Test.cpp:190:15: error: ‘iter2’ was not declared in this scope
+     ll3.erase(iter2);
+               ^
+/users/qbutterf/DataAbs/4/Test.cpp:199:12: error: ‘i’ does not name a type
+   for(auto i:al3) sum += i;
+            ^
+/users/qbutterf/DataAbs/4/Test.cpp:200:3: error: expected ‘;’ before ‘if’
+   if(sum!=ans2) {
+   ^
+/users/qbutterf/DataAbs/4/Test.cpp:200:3: error: expected primary-expression before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:200:3: error: expected ‘;’ before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:200:3: error: expected primary-expression before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:200:3: error: expected ‘)’ before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:206:12: error: ‘i’ does not name a type
+   for(auto i:ll3) sum += i;
+            ^
+/users/qbutterf/DataAbs/4/Test.cpp:207:3: error: expected ‘;’ before ‘if’
+   if(sum!=ans2) {
+   ^
+/users/qbutterf/DataAbs/4/Test.cpp:207:3: error: expected primary-expression before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:207:3: error: expected ‘;’ before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:207:3: error: expected primary-expression before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:207:3: error: expected ‘)’ before ‘if’
+/users/qbutterf/DataAbs/4/Test.cpp:220:12: error: ‘i’ does not name a type
+   for(auto i:al3) sum1 += i;
+            ^
+/users/qbutterf/DataAbs/4/Test.cpp:221:3: error: expected ‘;’ before ‘for’
+   for(auto i:ll3) sum2 += i;
+   ^
+/users/qbutterf/DataAbs/4/Test.cpp:221:3: error: expected primary-expression before ‘for’
+/users/qbutterf/DataAbs/4/Test.cpp:221:3: error: expected ‘;’ before ‘for’
+/users/qbutterf/DataAbs/4/Test.cpp:221:3: error: expected primary-expression before ‘for’
+/users/qbutterf/DataAbs/4/Test.cpp:221:3: error: expected ‘)’ before ‘for’
+/users/qbutterf/DataAbs/4/Test.cpp:221:12: error: ‘i’ does not name a type
+   for(auto i:ll3) sum2 += i;
+            ^
+/users/qbutterf/DataAbs/4/Test.cpp:222:3: error: expected ‘;’ before ‘cout’
+   cout << sum1 << endl;
+   ^
+/users/qbutterf/DataAbs/4/Test.cpp:223:3: error: expected primary-expression before ‘if’
+   if(sum1!=sum2) {
+   ^
+/users/qbutterf/DataAbs/4/Test.cpp:223:3: error: expected ‘)’ before ‘if’
